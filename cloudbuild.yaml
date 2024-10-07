@@ -24,7 +24,7 @@ steps:
       - '--allow-unauthenticated'  # Allow public access (optional)
 
 # Specify the service account to be used for deployment
-  # - serviceAccount: "498108204652-compute@developer.gserviceaccount.com"
+  - serviceAccount: "498108204652@cloudbuild.gserviceaccount.com"
 
 # Option to log only to Cloud Logging
 options:
