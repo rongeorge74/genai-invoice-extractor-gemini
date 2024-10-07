@@ -33,7 +33,7 @@ steps:
           "latest=100"
       ]
 
-  - serviceAccount: "498108204652-compute@developer.gserviceaccount.com"
+serviceAccount: "498108204652-compute@developer.gserviceaccount.com"
 
 options:
   logging: CLOUD_LOGGING_ONLY
