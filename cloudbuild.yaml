@@ -32,3 +32,8 @@ steps:
           "--set-traffic",
           "latest=100"
       ]
+# serviceAccount: ""
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
