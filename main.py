@@ -21,7 +21,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 ## Function to load OpenAI model and get respones
 
 def get_gemini_response(input,image,prompt):
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     response = model.generate_content([input,image[0],prompt])
     return response.text
     
@@ -47,7 +47,7 @@ def input_image_setup(uploaded_file):
 
 st.set_page_config(page_title="Gemini Image Demo")
 
-st.header("Gemini Application")
+st.header("Invoice Data Extractor")
 input=st.text_input("Input Prompt: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 image=""   
